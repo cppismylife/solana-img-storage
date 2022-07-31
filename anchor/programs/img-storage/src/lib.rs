@@ -11,9 +11,9 @@ pub mod img_storage {
         Ok(())
     }
 
-    pub fn add_img(ctx: Context<AddImg>, gif: String) -> Result<()> {
+    pub fn add_img(ctx: Context<AddImg>, img: String) -> Result<()> {
         let storage = &mut ctx.accounts.storage;
-        storage.images.push(gif);
+        storage.images.push(img);
         Ok(())
     }
 }
