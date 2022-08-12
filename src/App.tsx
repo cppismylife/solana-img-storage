@@ -88,7 +88,7 @@ const Images = () => {
   };
 
   const addImg = async () => {
-    if (!inputValue.current) {
+    if (inputValue.current === "") {
       alert("Empty input!");
       return;
     }
