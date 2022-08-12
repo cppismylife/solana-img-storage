@@ -2,6 +2,8 @@
 
 This app can store urls of images on-chain and display them on website. Each user can have his own storage that only he will have access to.
 
+I've already deployed app to devnet [here]("https://solana-img-storage.vercel.app/)
+
 ## If you want to change something
 
 1. Make your changes
