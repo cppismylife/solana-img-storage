@@ -88,6 +88,10 @@ const Images = () => {
   };
 
   const addImg = async () => {
+    if (!inputValue.current) {
+      alert("Empty input!");
+      return;
+    }
     const address = findStorageAddress();
     const tx = await program.methods
       .addImg(inputValue.current)
